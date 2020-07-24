@@ -13,5 +13,8 @@
 In order for this primitive to work **you must to delete the C:\ProgramData\Microsoft\Windows\WER before using this class.**
 
 ### Note
-Based on my tests, this technique (as is) works only on Windows Home Edition. Maybe I am missing something. 
+Based on my tests, this technique (as is) can create an abritrary folder (create_target_folder) in some windows versions. Maybe it can create_target_folder in all Windows versions, but I have not tested it in every version.
+
+However, regarding the escalateToSystem it has been succesfully tested only against Windows Home Edition . It seems that not all windows versions load the dll from c:\windows\system32\wermgr.exe.local . Maybe I am missing something. 
+
 If you know other editions in which it works, please let me know and I will edit accordingly .
