@@ -14,4 +14,5 @@ In order for this primitive to work **you must to delete the C:\ProgramData\Micr
 
 ### Change Log
 I changed escalateToSystem, and now the function uses the CompatTelRunner in order to support escalation in Windows 10 Pro systems. 
+
 For windows Home, it will use wermgr.exe.local, as described by Jona_L .
